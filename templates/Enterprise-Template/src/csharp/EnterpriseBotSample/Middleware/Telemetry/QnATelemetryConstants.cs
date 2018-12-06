@@ -8,13 +8,13 @@ namespace EnterpriseBotSample.Middleware.Telemetry
     /// </summary>
     public static class QnATelemetryConstants
     {
-        public const string ActivityIdProperty = "ActivityId";
-        public const string UsernameProperty = "Username";
-        public const string ConversationIdProperty = "ConversationId";
-        public const string OriginalQuestionProperty = "OriginalQuestion";
-        public const string QuestionProperty = "Question";
-        public const string AnswerProperty = "Answer";
-        public const string ScoreProperty = "Score";
-        public const string ArticleFoundProperty = "QnAItemFound";
+        public const string ActivityIdProperty = "activityId";
+        public const string UsernameProperty = "username";
+        public const string ConversationIdProperty = "conversationId";
+        public const string OriginalQuestionProperty = "originalQuestion";
+        public const string QuestionProperty = "question";
+        public const string AnswerProperty = "answer";
+        public const string ScoreProperty = "score";
+        public const string ArticleFoundProperty = "qnAItemFound";
     }
 }
