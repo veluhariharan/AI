@@ -7,7 +7,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
     {
         public const string ActivityIDProperty = "activityId";
         public const string ReplyActivityIDProperty = "replyActivityId";
-        public const string ChannelProperty = "channel";
+        public const string ChannelIdProperty = "channelId";
         public const string FromIdProperty = "fromId";
         public const string FromNameProperty = "fromName";
         public const string RecipientIdProperty = "recipientId";
@@ -16,5 +16,6 @@ namespace EnterpriseBotSample.Middleware.Telemetry
         public const string ConversationNameProperty = "conversationName";
         public const string TextProperty = "text";
         public const string LocaleProperty = "locale";
+        public const string SpeakProperty = "speak";
     }
 }

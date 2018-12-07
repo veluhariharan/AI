@@ -165,12 +165,12 @@ namespace EnterpriseBotSample.Middleware.Telemetry
         {
             var properties = new Dictionary<string, string>()
                 {
+                    { TelemetryConstants.ChannelIdProperty, activity.ChannelId },
                     { TelemetryConstants.FromIdProperty, activity.From.Id },
                     { TelemetryConstants.ConversationNameProperty, activity.Conversation.Name },
                     { TelemetryConstants.LocaleProperty, activity.Locale },
                     { TelemetryConstants.RecipientIdProperty, activity.Recipient.Id },
                     { TelemetryConstants.RecipientNameProperty, activity.Recipient.Name },
-
                 };
 
             // For some customers, logging user name within Application Insights might be an issue so have provided a config setting to disable this feature
@@ -198,6 +198,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
         {
             var properties = new Dictionary<string, string>()
                 {
+                    { TelemetryConstants.ChannelIdProperty, activity.ChannelId }
                     { TelemetryConstants.ReplyActivityIDProperty, activity.ReplyToId },
                     { TelemetryConstants.RecipientIdProperty, activity.Recipient.Id },
                     { TelemetryConstants.ConversationNameProperty, activity.Conversation.Name },
@@ -231,7 +232,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
         {
             var properties = new Dictionary<string, string>()
                 {
-                    { TelemetryConstants.ChannelProperty, activity.ChannelId },
+                    { TelemetryConstants.ChannelIdProperty, activity.ChannelId },
                     { TelemetryConstants.RecipientIdProperty, activity.Recipient.Id },
                     { TelemetryConstants.ConversationIdProperty, activity.Conversation.Id },
                     { TelemetryConstants.ConversationNameProperty, activity.Conversation.Name },
@@ -257,7 +258,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
         {
             var properties = new Dictionary<string, string>()
                 {
-                    { TelemetryConstants.ChannelProperty, activity.ChannelId },
+                    { TelemetryConstants.ChannelIdProperty, activity.ChannelId },
                     { TelemetryConstants.RecipientIdProperty, activity.Recipient.Id },
                     { TelemetryConstants.ConversationIdProperty, activity.Conversation.Id },
                     { TelemetryConstants.ConversationNameProperty, activity.Conversation.Name },

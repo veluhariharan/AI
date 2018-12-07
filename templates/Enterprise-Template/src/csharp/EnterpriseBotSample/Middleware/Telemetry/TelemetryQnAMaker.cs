@@ -60,6 +60,8 @@ namespace EnterpriseBotSample.Middleware.Telemetry
                     telemetryProperties.Add(QnATelemetryConstants.ConversationIdProperty, conversationId);
                 }
 
+                telemetryProperties.Add(QnATelemetryConstants.Channel, conversationId);
+
                 // For some customers, logging original text name within Application Insights might be an issue
                 var text = context.Activity.Text;
                 if (LogOriginalMessage && !string.IsNullOrWhiteSpace(text))
@@ -81,11 +83,13 @@ namespace EnterpriseBotSample.Middleware.Telemetry
                     telemetryProperties.Add(QnATelemetryConstants.QuestionProperty, string.Join(",", queryResult.Questions));
                     telemetryProperties.Add(QnATelemetryConstants.AnswerProperty, queryResult.Answer);
                     telemetryMetrics.Add(QnATelemetryConstants.ScoreProperty, queryResult.Score);
+                    telemetryProperties.Add(QnATelemetryConstants.ArticleFoundProperty, "true");
                 }
                 else
                 {
                     telemetryProperties.Add(QnATelemetryConstants.QuestionProperty, "No Qna Question matched");
                     telemetryProperties.Add(QnATelemetryConstants.AnswerProperty, "No Qna Question matched");
+                    telemetryProperties.Add(QnATelemetryConstants.ArticleFoundProperty, "false");
                 }
 
                 // Track the event
