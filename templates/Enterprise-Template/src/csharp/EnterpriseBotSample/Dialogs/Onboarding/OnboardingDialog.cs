@@ -29,10 +29,9 @@ namespace EnterpriseBotSample.Dialogs.Onboarding
                 AskForLocation,
                 FinishOnboardingDialog,
             };
-
+            TelemetryClient = telemetryClient;
             var dialog = new WaterfallDialog(InitialDialogId, onboarding);
             dialog.TelemetryClient = telemetryClient;
-
             AddDialog(dialog);
             AddDialog(new TextPrompt(DialogIds.NamePrompt));
             AddDialog(new TextPrompt(DialogIds.EmailPrompt));
