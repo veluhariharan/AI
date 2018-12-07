@@ -89,7 +89,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
                 }
 
                 // Track the event
-                ((TelemetryClient)telemetryClient).TrackEvent(QnaMsgEvent, telemetryProperties, telemetryMetrics);
+                ((IBotTelemetryClient)telemetryClient).TrackEvent(QnaMsgEvent, telemetryProperties, telemetryMetrics);
             }
 
             return queryResults;

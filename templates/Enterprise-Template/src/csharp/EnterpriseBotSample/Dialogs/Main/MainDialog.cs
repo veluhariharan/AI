@@ -28,6 +28,7 @@ namespace EnterpriseBotSample.Dialogs.Main
             _services = services ?? throw new ArgumentNullException(nameof(services));
             _conversationState = conversationState;
             _userState = userState;
+            TelemetryClient = telemetryClient;
 
             AddDialog(new OnboardingDialog(_services, _userState.CreateProperty<OnboardingState>(nameof(OnboardingState)), telemetryClient));
             AddDialog(new EscalateDialog(_services));

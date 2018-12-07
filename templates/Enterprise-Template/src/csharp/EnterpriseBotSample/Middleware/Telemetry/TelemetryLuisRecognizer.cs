@@ -163,7 +163,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
                 }
 
                 // Track the event
-                ((TelemetryClient)telemetryClient).TrackEvent($"{LuisTelemetryConstants.IntentPrefix}.{topLuisIntent.intent}", telemetryProperties);
+                ((IBotTelemetryClient)telemetryClient).TrackEvent($"{LuisTelemetryConstants.IntentPrefix}.{topLuisIntent.intent}", telemetryProperties);
             }
 
             return recognizerResult;
