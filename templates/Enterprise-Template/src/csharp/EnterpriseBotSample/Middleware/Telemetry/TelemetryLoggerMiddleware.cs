@@ -182,7 +182,7 @@ namespace EnterpriseBotSample.Middleware.Telemetry
         {
             var properties = new Dictionary<string, string>()
                 {
-                    { TelemetryConstants.ChannelIdProperty, activity.ChannelId }
+                    { TelemetryConstants.ChannelIdProperty, activity.ChannelId },
                     { TelemetryConstants.ReplyActivityIDProperty, activity.ReplyToId },
                     { TelemetryConstants.RecipientIdProperty, activity.Recipient.Id },
                     { TelemetryConstants.ConversationNameProperty, activity.Conversation.Name },

@@ -60,8 +60,6 @@ namespace EnterpriseBotSample.Middleware.Telemetry
                     telemetryProperties.Add(QnATelemetryConstants.ConversationIdProperty, conversationId);
                 }
 
-                telemetryProperties.Add(QnATelemetryConstants.Channel, conversationId);
-
                 // For some customers, logging original text name within Application Insights might be an issue
                 var text = context.Activity.Text;
                 if (LogOriginalMessage && !string.IsNullOrWhiteSpace(text))
