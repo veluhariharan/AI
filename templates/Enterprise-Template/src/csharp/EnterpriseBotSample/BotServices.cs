@@ -22,26 +22,6 @@ namespace EnterpriseBotSample
     /// <seealso cref="https://www.luis.ai/home"/>
     public class BotServices
     {
-
-        /// <summary>
-
-        /// Initializes a new instance of the <see cref="BotServices"/> class.
-
-        /// </summary>
-
-        /// <param name="client">An Application Insights <see cref="TelemetryClient"/> instance.</param>
-
-        /// <param name="luisServices">A dictionary of named <see cref="LuisRecognizer"/> instances for usage within the bot.</param>
-
-        public BotServices(TelemetryClient client, Dictionary<string, TelemetryLuisRecognizer> luisServices)
-
-        {
-
-            TelemetryClient = client ?? throw new ArgumentNullException(nameof(client));
-            LuisServices = luisServices ?? throw new ArgumentNullException(nameof(luisServices));
-
-        }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="BotServices"/> class.
         /// </summary>
