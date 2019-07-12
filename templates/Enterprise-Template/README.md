@@ -1,4 +1,8 @@
-# Conversational AI - Enterprise Template
+# Enterprise Template
+
+> **IMPORTANT**
+> Enterprise Template is now deprecated in favour of the [Virtual Assistant Template](https://github.com/Microsoft/AI). Virtual Assistant documentation includes information on how to migrate as appropriate
+> See [What's new at Build](https://github.com/microsoft/AI/wiki/What's-new-at-Build-2019) for more information.
 
 Creation of a high quality conversational experience requires a foundational set of capabilities. To help you succeed with building great conversational experiences, we have created an Enterprise Bot Template. This template brings together all of the best practices and supporting components we've identified through building of conversational experiences.
 
@@ -23,7 +27,7 @@ Once the template is created and deployment steps are executed you can hit F5 to
 
 ## Getting Started
 
-- Refer to the [main documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-enterprise-template-create-project?view=azure-bot-service-4.0
+- Refer to the [main documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-enterprise-template-getting-started?view=azure-bot-service-4.0
 ) to get started with the Enterprise Template which is currently available for Visual Studio with Yeoman coming soon.
 - This repo contains the Source Code for the template which will continue to be evolved with the latest best practice and capabilities. Feel free to raise Issues or submit Pull Requests.
 

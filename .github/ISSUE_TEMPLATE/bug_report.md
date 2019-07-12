@@ -2,25 +2,21 @@
 name: Bug report
 about: Report bugs for this project
 title: ''
-labels: ''
+labels: 'Needs Triage, Type: Bug'
 assignees: ''
 
 ---
 
-**Project**
-<!--Virtual Assistant, Skills, Enterprise Bot Template, or Customer Support Template-->
+#### What project is affected?
 
-**Description**
-<!--A clear and concise description of what the bug is.-->
+#### What language is this in?
 
-**To Reproduce**
-<!--Steps to reproduce the behavior:-->
+#### What happens?
 
-**Expected behavior**
-<!--A clear and concise description of what you expected to happen.-->
+#### What are the steps to reproduce this issue?
 
-**Screenshots**
-<!--If applicable, add screenshots to help explain your problem.-->
+#### What were you expecting to happen?
 
-**Additional context**
-<!--Add any other context about the problem here.-->
+#### Can you share any logs, error output, etc.?
+
+#### Any screenshots or additional context?

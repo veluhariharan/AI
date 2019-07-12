@@ -1,0 +1,27 @@
+{
+  "cognitiveModels": {
+    "en": {
+      "languageModels": [
+        {
+          "id": "General",
+          "name": "",
+          "appId": "",
+          "authoringKey": "",
+          "subscriptionKey": "",
+          "version": "",
+          "region": ""
+        },
+        {
+          "id": "Email",
+          "name": "",
+          "appId": "",
+          "authoringKey": "",
+          "subscriptionKey": "",
+          "version": "",
+          "region": ""
+        }
+      ]
+    }
+  },
+  "defaultLocale": "en-us"
+}
